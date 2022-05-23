@@ -20,7 +20,7 @@ public class MouseHover {
 		driver.manage().window().maximize();
 		driver.navigate().to("https://www.flipkart.com/");
 		
-	/*	driver.findElement(Locators.loginPopup).click();
+		driver.findElement(Locators.loginPopup).click();
 		Thread.sleep(3000);
 		
 		Actions actions =new Actions(driver);
@@ -28,7 +28,7 @@ public class MouseHover {
 		
 		Thread.sleep(3000);
 		actions.moveToElement(driver.findElement(Locators.HomeDecorelink)).perform();
-	*/	
+		
 		Thread.sleep(5000);
 		driver.close();
 		

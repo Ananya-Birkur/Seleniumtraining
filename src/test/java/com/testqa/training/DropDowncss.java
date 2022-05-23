@@ -1,6 +1,5 @@
 package com.testqa.training;
 
-import java.util.Iterator;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -32,11 +31,12 @@ public class DropDowncss {
 		Thread.sleep(3000);
 		
 		List<WebElement> allOptions=select.getOptions();
-		for (Iterator iterator = allOptions.iterator(); iterator.hasNext();) {
-			WebElement webElement = (WebElement) iterator.next();
-			
-		}
-	
+			for (WebElement opt : allOptions) {
+				String data=opt.getText();
+				System.out.println(data);
+				
+				
+		}	
 		driver.close();
 		
 		
